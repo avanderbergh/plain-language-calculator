@@ -16,7 +16,7 @@
 
 function convertToNumber(word) {
   const numbers = {
-    one: 1,
+    one: 10,
     einz: 1,
     ein: 1,
     two: 2,
