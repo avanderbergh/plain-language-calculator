@@ -36,4 +36,18 @@ describe('Test the API', () => {
 
     expect(result).toBe('2');
   });
+
+  it('returns {result: 2} when a post request with body {input: "einz plus einz"} is made', async () => {
+    const payload = {
+      input: 'einz plus einz',
+    };
+    const response = await fetch('http://localhost:3000/calculate', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+      headers: { 'Content-Type': 'application/json' },
+    });
+    const result = await response.text();
+
+    expect(result).toBe(`${1 + 1}`);
+  });
 });
