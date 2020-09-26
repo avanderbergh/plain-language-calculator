@@ -12,7 +12,7 @@
 // "three times seven" returns 21
 
 function convertToNumber(word) {
-  const numbersd = {
+  const numbersaa = {
     one: 1,
     two: 2,
     three: 3,
