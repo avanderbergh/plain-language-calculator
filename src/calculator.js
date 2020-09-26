@@ -12,6 +12,7 @@
 // "three times seven" returns 21
 
 // the same exaples above should also work in German
+// It should work with word numbers written with an Uppercase or Lowercase letters
 
 function convertToNumber(word) {
   const numbers = {
@@ -37,7 +38,7 @@ function convertToNumber(word) {
     ten: 10,
     zehn: 10,
   };
-  return numbers[word];
+  return numbers[word.toLowerCase()];
 }
 module.exports = class Calculator {
   static calculate(input) {

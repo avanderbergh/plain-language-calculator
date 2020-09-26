@@ -43,6 +43,10 @@ describe('Test the calculator in German', () => {
     expect(calc.calculate('einz plus einz')).toEqual(2);
   });
 
+  it('should return 2 with input "Einz plus Einz"', () => {
+    expect(calc.calculate('Einz plus Einz')).toEqual(2);
+  });
+
   it("should return 6 with input 'einz plus funf'", () => {
     expect(calc.calculate('einz plus funf')).toEqual(6);
   });
